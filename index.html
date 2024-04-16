@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Weather Forecast</title>
+    <!-- Include Tailwind CSS (CDN) -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <!-- Include Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=Judson:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <style>h1, h2, h3, h4, h5, h6 { font-family: 'Cormorant Garamond', serif; --font-serif: 'Cormorant Garamond'; }
+</style>
+<style>body { font-family: 'Judson', serif; --font-serif: 'Judson'; }
+</style>
+
+<div class="bg-gray-50/90 w-full py-24 md:py-24 lg:p-32">
+  <div class="container px-8 md:px-6">
+    <div class="grid items-center gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
+      <div class="flex flex-col justify-center space-y-4">
+        <div class="space-y-2">
+          <h1 class="text-3xl font-bold tracking-tighter sm:text-5xl">Namste Delhi,</h1>
+          <p class="text-gray-500 dark:text-gray-400 text-3xl">Here is your forecast for tomorrow.</p>
+        </div>
+      </div>
+      <div class="flex flex-col gap-2">
+        <div class="grid grid-cols-2 gap-2">
+          <div class="flex items-center space-x-2">
+            <span class="font-semibold text-2xl">PM2.5</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span class="font-semibold text-2xl">PM10</span>
+          </div>
+        </div>
+        <div class="grid grid-cols-2 gap-2">
+          <div class="flex items-center space-x-2">
+            <span id="pm2p5" class="font-semibold text-4xl">--</span>
+            <span class="font-light text-sm">µg/m³</span>
+          </div>
+          <div class="flex items-center space-x-2">
+            <span id="pm10" class="font-semibold text-4xl">--</span>
+            <span class="font-light text-sm">µg/m³</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
