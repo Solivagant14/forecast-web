@@ -24,5 +24,5 @@ window.onload = async () => {
     await fetchData('forecast-web.railway.internal/predict/?pm_type=pm2p5', 'pm2p5'); 
 
     // API 2
-    await fetchData('https://aqi-forecast-api-production.up.railway.app/predict/?pm_type=pm10', 'pm10'); 
+    await fetchData('forecast-web.railway.internal/predict/?pm_type=pm10', 'pm10'); 
 };
